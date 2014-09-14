@@ -1,0 +1,29 @@
+/* It is recommended to place all your extra/additional CSS rules here */
+
+.sponsor-logo{
+	width: 70px;
+	height:70px;
+	margin: 0.7em 0;
+}
+
+.sponsor-content{
+	padding-left: 15%;
+}
+
+
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
