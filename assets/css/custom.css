@@ -10,6 +10,10 @@
 	padding-left: 15%;
 }
 
+#form-submission1{
+    color:#000000;
+    background-color:#CCCCCC;
+}
 
 @media (min-width:992px) {
     .desktop-only {
@@ -27,3 +31,4 @@
         display:none !important;
     }
 }
+
