@@ -14,15 +14,15 @@
     background-color:rgba(0,0,0,0.3);
 }
 
+.left .carousel-control {
+    opacity: 0.5;
+}
 
 @media (min-width:992px) {
     .desktop-only {
         display:block !important;
     }
 }
-
-
-
 
 @media (max-width: 991px) {
     .mobile-only {
