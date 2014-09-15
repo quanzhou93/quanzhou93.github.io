@@ -229,6 +229,70 @@
 
 
 
+
+
+          <!-- Forms! -->
+          <article id="contact" class="section-wrapper clearfix " data-custom-background-img="assets/images/other_images/bg5.jpg">
+            <div class="content-wrapper clearfix" style="background-color:rgba(0,0,0,0.3);">
+
+              <h1 class="section-title">Sign Up</h1>
+              
+              <!--  <!-- CONTACT DETAILS -->
+              <div class="contact-details col-sm-5 col-md-3" style='text-align:left;'>
+                <p> Come and go to the event as you please </p>
+                <p> Space limited to the first 75 particpants </p>
+                <p> Mentors get free swag! </p>
+              </div>
+              <!-- END: CONTACT DETAILS --> 
+
+              <!-- CONTACT FORM -->
+              <div class="col-sm-7 col-md-9">
+                <!-- iFrame needed for preventing a redirect -->
+                <iframe name="hidden_iframe" id="hidden_iframe"
+                style="display:none;" onload="if(submitted)
+                {feedbackFormSubmitted();}"></iframe>
+
+                <form id="ss-form" action="https://docs.google.com/forms/d/1SlRbDpEe0yozOikJYoMI8ibvPNmglln4y6ojv6PyFXs/formResponse" class="form-style validate-form clearfix" method="POST" role="form" target="hidden_iframe" onsubmit="submitted=true;">
+
+                  <!-- form left col -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="text-field form-control validate-field required" data-validation-type="string" name="entry.645350414" placeholder="Full Name" id="entry_645350414" >
+                      <!-- <input type="text" name="entry.645350414" value="" class="ss-q-short valid" id="entry_645350414" dir="auto" aria-label="First Name  " title=""> -->
+                    </div>  
+                    <div class="form-group">
+                      <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="entry.2040360396"  id="  entry_2040360396" >
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="entry.105843093" id="entry_105843093">
+                    </div>    
+
+                  </div><!-- end: form left col -->
+
+                  <!-- form right col -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <textarea placeholder="Mentor or Developer?" class="form-control validate-field required" name="entry.108755409" id="entry_108755409"></textarea>
+                    </div> 
+                    <div class="form-group">
+                      <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+<!--                       <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+ -->                      <button type="submit" onclick="populate_and_open_modal(event, 'modal-content-9'); submit();" disable=true class="btn btn-sm btn-outline-inverse"> <h6> Submit</h6></button>
+                    </div>
+
+
+                    <div class="content-to-populate-in-modal" id="modal-content-9">
+                      <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                      <h1>Thanks for Signing up! </h1>
+                      <p> If you have any questions, please email quanzhou@princeton.edu</p>
+                    </div><!-- #modal-content-7 -->
+                  </div>
+            </form>
+          </div><!-- end: CONTACT FORM -->
+
+        </div><!-- .content-wrapper -->
+      </article><!-- .section-wrapper -->
+
           <!-- Article on Sponsors -->
           <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg6.jpg">
             <div class="content-wrapper clearfix">
@@ -309,74 +373,6 @@
               </div><!-- .col-sm-11 -->
             </div><!-- .content-wrapper -->
           </article><!-- .section-wrapper -->
-
-
-
-          <article id="contact" class="section-wrapper clearfix " data-custom-background-img="assets/images/other_images/bg5.jpg">
-            <div class="content-wrapper clearfix" style="background-color:rgba(0,0,0,0.3);">
-
-              <h1 class="section-title">Sign Up</h1>
-              
-              <!--  <!-- CONTACT DETAILS -->
-              <div class="contact-details col-sm-5 col-md-3" style='text-align:left;'>
-                <p> Come and go to the event as you please </p>
-                <p> Space limited to the first 75 particpants </p>
-                <p> Mentors get free swag! </p>
-              </div>
-              <!-- END: CONTACT DETAILS --> 
-
-              <!-- CONTACT FORM -->
-              <div class="col-sm-7 col-md-9">
-                <!-- iFrame needed for preventing a redirect -->
-                <iframe name="hidden_iframe" id="hidden_iframe"
-                style="display:none;" onload="if(submitted)
-                {feedbackFormSubmitted();}"></iframe>
-
-                <form id="ss-form" action="https://docs.google.com/forms/d/1SlRbDpEe0yozOikJYoMI8ibvPNmglln4y6ojv6PyFXs/formResponse" class="form-style validate-form clearfix" method="POST" role="form" target="hidden_iframe" onsubmit="submitted=true;">
-
-                  <!-- form left col -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="text-field form-control validate-field required" data-validation-type="string" name="entry.645350414" placeholder="Full Name" id="entry_645350414" >
-                      <!-- <input type="text" name="entry.645350414" value="" class="ss-q-short valid" id="entry_645350414" dir="auto" aria-label="First Name  " title=""> -->
-                    </div>  
-                    <div class="form-group">
-                      <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="entry.2040360396"  id="  entry_2040360396" >
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="entry.105843093" id="entry_105843093">
-                    </div>    
-
-                  </div><!-- end: form left col -->
-
-                  <!-- form right col -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <textarea placeholder="Mentor or Developer?" class="form-control validate-field required" name="entry.108755409" id="entry_108755409"></textarea>
-                    </div> 
-                    <div class="form-group">
-                      <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
-<!--                       <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
- -->                      <button type="submit" onclick="populate_and_open_modal(event, 'modal-content-9'); submit();" disable=true class="btn btn-sm btn-outline-inverse"> <h6> Submit</h6></button>
-                    </div>
-
-
-                    <div class="content-to-populate-in-modal" id="modal-content-9">
-                      <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
-                      <h1>Thanks for Signing up! </h1>
-                      <p> If you have any questions, please email quanzhou@princeton.edu</p>
-                    </div><!-- #modal-content-7 -->
-                  </article>
-                </div> 
-                <!-- <div class="form-group form-general-error-container"></div>            -->
-              </div><!-- end: form right col -->
-
-            </form>
-          </div><!-- end: CONTACT FORM -->
-
-        </div><!-- .content-wrapper -->
-      </article><!-- .section-wrapper -->
-
     </section><!-- #main-content -->
 
     <!-- Footer -->
